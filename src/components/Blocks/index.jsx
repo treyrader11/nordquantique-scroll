@@ -87,7 +87,8 @@ export default function Blocks({ className, length = 4, startIndex }) {
           "absolute",
           "top-0",
           "w-full",
-          "h-[400px]"
+          "h-[400px]",
+          className
         )}
       >
         {Array.from({ length }).map((_, i) => (
@@ -101,7 +102,8 @@ export default function Blocks({ className, length = 4, startIndex }) {
           "absolute",
           "bottom-0",
           "w-full",
-          "h-[400px]"
+          "h-[400px]",
+          className
         )}
       >
         {Array.from({ length }).map((_, i) => (
@@ -110,24 +112,4 @@ export default function Blocks({ className, length = 4, startIndex }) {
       </div>
     </>
   );
-
-  // return (
-  //   <div
-  //     className={cn(
-  //       "blocks-container",
-  //       "absolute",
-  //       "bottom-0",
-  //       "w-full",
-  //       "h-[400px]",
-  //       className
-  //     )}
-  //   >
-  //     {Array.from({ length }).map((_, i) => (
-  //       <BlockRow
-  //         key={startIndex + i}
-  //         ref={(el) => (rowsRef.current[startIndex + i] = el)}
-  //       />
-  //     ))}
-  //   </div>
-  // );
 }
