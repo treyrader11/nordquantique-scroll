@@ -1,4 +1,4 @@
-# Card Parallax
+# Nord Quantique Scroll
 
 ### Product Screenshots
 
@@ -7,8 +7,7 @@
 ### Built with
 
 -  NextJS (App Router)
--  Javascript
--  Sass
+-  GSAP/Scrolltrigger
+-  Tailwind CSS
 -  Studio Freight/Lenis
--  Framer Motion
 
