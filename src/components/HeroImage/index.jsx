@@ -12,8 +12,10 @@ export default function HeroImage({ className }) {
         src="/assets/img-1.jpg"
         alt=""
       />
-      <Blocks className="top" startIndex={0} />
-      <Blocks className="bottom" startIndex={4} />
+      {/* <Blocks className="top" startIndex={0} />
+      <Blocks className="bottom" startIndex={4} /> */}
+       <Blocks />
+    
     </Section>
   );
 }

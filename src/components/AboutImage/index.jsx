@@ -12,8 +12,10 @@ export default function AboutImage({ className }) {
         src="/assets/img-2.jpg"
         alt=""
       />
-      <Blocks className="top" startIndex={0} />
-      <Blocks className="bottom" startIndex={4} />
+
+      {/* <Blocks className="top" startIndex={0} />
+      <Blocks className="bottom" startIndex={4} /> */}
+      <Blocks />
     </Section>
   );
 }
