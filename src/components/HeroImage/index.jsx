@@ -1,25 +1,19 @@
 import { cn } from "@/lib/utils";
-import BlockRows from "../BlockRows";
+import Blocks from "../Blocks";
 import Image from "next/image";
+import Section from "../Section";
 
 export default function HeroImage({ className }) {
   return (
-    <section
-      className={cn(
-        "relative",
-        "w-full",
-        "min-h-screen",
-        "h-[200vh]",
-        className
-      )}
-    >
+    <Section className={cn("h-[200vh]", className)}>
       <Image
         fill
         className={cn("absolute size-full object-cover z-[-1]")}
-        src="/images/cactus.jpg"
+        src="/assets/img-1.jpg"
         alt=""
       />
-      <BlockRows />
-    </section>
+      <Blocks className="top" startIndex={0} />
+      <Blocks className="bottom" startIndex={4} />
+    </Section>
   );
 }

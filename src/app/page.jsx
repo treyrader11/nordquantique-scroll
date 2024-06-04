@@ -1,8 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-// import gsap from "gsap";
-// import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { cn } from "@/lib/utils";
 import Hero from "@/components/Hero";
 import HeroImage from "@/components/HeroImage";
