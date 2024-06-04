@@ -71,17 +71,107 @@ export default function BlockRows() {
 
   return (
     <>
-      <div className="blocks-container top">
-        <div className="blocks-row" ref={(el) => (rowsRef.current[0] = el)} />
-        <div className="blocks-row" ref={(el) => (rowsRef.current[1] = el)} />
-        <div className="blocks-row" ref={(el) => (rowsRef.current[2] = el)} />
-        <div className="blocks-row" ref={(el) => (rowsRef.current[3] = el)} />
+      <div
+        className={cn(
+          "top",
+          "blocks-container",
+          "absolute",
+          "top-0",
+          "w-full",
+          "h-[400px]"
+        )}
+      >
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[0] = el)}
+        />
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[1] = el)}
+        />
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[2] = el)}
+        />
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[3] = el)}
+        />
       </div>
-      <div className="blocks-container bottom">
-        <div className="blocks-row" ref={(el) => (rowsRef.current[4] = el)} />
-        <div className="blocks-row" ref={(el) => (rowsRef.current[5] = el)} />
-        <div className="blocks-row" ref={(el) => (rowsRef.current[6] = el)} />
-        <div className="blocks-row" ref={(el) => (rowsRef.current[7] = el)} />
+      <div
+        className={cn(
+          "bottom",
+          "blocks-container",
+          "absolute",
+          "bottom-0",
+          "w-full",
+          "h-[400px]"
+        )}
+      >
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[4] = el)}
+        />
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[5] = el)}
+        />
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[6] = el)}
+        />
+        <div
+          className={cn(
+            "blocks-row",
+            "w-full",
+            "h-[100px]",
+            "overflow-hidden",
+            "flex"
+          )}
+          ref={(el) => (rowsRef.current[7] = el)}
+        />
       </div>
     </>
   );

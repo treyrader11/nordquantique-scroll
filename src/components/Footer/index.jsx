@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
 import { forwardRef } from "react";
+import Section from "../Section";
 
-function Footer(props, ref) {
-  return <h1 className="text-5xl tracking-[-2px]">Footer</h1>;
+function Footer({ className }, ref) {
+  return <Section className={cn("bg-[#645439]", className)}>Section 3</Section>;
 }
 
 export default forwardRef(Footer);

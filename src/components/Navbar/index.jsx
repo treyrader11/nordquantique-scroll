@@ -10,8 +10,11 @@ export default function Navbar() {
         "flex",
         "items-center",
         "inset-x-0",
-
-        "bg-neutral-800/80"
+        "text-white",
+        "p-5",
+        "bg-neutral-800/80",
+        "font-light",
+        "text-sm",
       )}
     >
       <ul className="flex items-center gap-4">
